@@ -11,8 +11,7 @@ p {
 
 nav {
   display: flex;
-  float: right;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 1.5em;
 }
 
@@ -21,11 +20,19 @@ ul {
   list-style: none;
 }
 
-li{
+li {
+  padding: 0 1.5em 0 0;
+}
+
+a {
+  text-decoration: none;
   font-family: 'IBM Plex Serif', serif;
   color: black;
   font-size: 20px;
-  padding: 0 1.5em 0 0;
+}
+
+a.underscore:hover {
+  border-bottom: 2px solid black;
 }
 
 img {
