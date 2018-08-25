@@ -11,10 +11,52 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px;
 }
 
 .smalltext {
+    padding: 0 20 0 20;
     font-size: 16px;
+}
+
+p.cardText {
+  font-family: "Work Sans", sans-serif;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.imgwrap {
+   width: 25%; /*or whatever you choose*/
+   margin: auto;
+}
+.imgwrap img {
+   display: block;
+   width: 100%;
+   max-width: 500px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
+
+.overlay {
+    opacity:0; /* Completely invisible. */
+    transition: 0.2s;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay:hover{
+    opacity:1; /* Completely visible. */
 }
 
 nav {
@@ -40,21 +82,25 @@ a {
 }
 
 a.underscore:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #A0EBEC;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  /* display: block; */
+.welcome {
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body{
   margin: 0;
   padding: 0;
-  background: #FDD030;
+  background: #E0EFF2;
 }
 
 .skewedBox {
@@ -95,7 +141,7 @@ body{
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
+    width: 50%;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
@@ -112,10 +158,12 @@ body{
     background-color: white;
     padding: 10px;
     border-radius: 5px;
+    position: relative;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
 }
 .content:hover {
     transition: 0.3s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 6px 14px 0 rgba(0,0,0,0.2); */
     transition: 0.2s;
 }
 
@@ -132,3 +180,40 @@ body{
         width: 100%;
     }
 }
+
+/* red: f98ca4;
+blue: 4ad9db;
+$green: 65f283;
+$orange: f5b10b; */
+
+p.title {
+  text-align: center;
+  margin-top: 40px;
+  color: #3a50d9;
+  font-family: 'Work Sans', sans-serif;
+  text-shadow: -2px 2px 0 #e0eff2;
+  line-height: 1;
+  text-shadow:
+	-1px -1px 0 #3a50d9, 1px -1px 0 #3a50d9,
+    -1px 1px 0 #3a50d9, 1px 1px 0 #3a50d9,
+    1px 0px 0px #3a50d9, 0px 1px 0px #3a50d9,
+    2px 1px 0px #3a50d9, 1px 2px 0px #3a50d9,
+    3px 2px 0px #3a50d9, 2px 3px 0px #3a50d9,
+    4px 3px 0px #3a50d9, 3px 4px 0px #3a50d9,
+    5px 4px 0px #3a50d9, 3px 5px 0px #3a50d9,
+    6px 5px 0px #3a50d9, 0 3px 0 #3a50d9,
+    1px 4px 0 #3a50d9, 2px 5px 0px #3a50d9,
+    2px -1px 0 #3a50d9, 3px 0 0 #3a50d9,
+    4px 1px 0 #3a50d9, 5px 2px 0px #3a50d9,
+    6px 3px 0 #3a50d9, 7px 4px 0 #3a50d9
+
+  &:after,
+	&:before {
+		position: absolute;
+		overflow: hidden;
+		left: 0;
+		width: 100%;
+		top: 0;
+		z-index: 5;
+	}
+  }
