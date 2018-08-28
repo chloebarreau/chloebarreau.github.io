@@ -19,6 +19,17 @@ p {
     font-size: 16px;
 }
 
+.intersection{
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    /* background-color:#A0EBEC; */
+    text-align: center;
+    margin: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 p.cardText {
   font-family: "Work Sans", sans-serif;
   color: black;
@@ -82,7 +93,7 @@ a {
 }
 
 a.underscore:hover {
-  border-bottom: 2px solid #A0EBEC;
+  border-bottom: 2px solid black; //#A0EBEC
 }
 
 .welcome {
