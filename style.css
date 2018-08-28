@@ -55,7 +55,6 @@ p.cardText {
 .overlay {
 /*     opacity:0; /* Completely invisible. */ */
 /*     transition: 0.2s; */
-	transition:opacity 1000ms;
     border-radius: 5px;
     background-color: white;
     position: absolute;
@@ -69,6 +68,7 @@ p.cardText {
 
 .overlay:hover{
     opacity:1; /* Completely visible. */
+		transition:opacity 1000ms;
 }
 
 nav {
