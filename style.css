@@ -68,7 +68,6 @@ p.cardText {
 
 .overlay:hover{
     opacity:1; /* Completely visible. */
-		transition:opacity 1000ms;
 }
 
 nav {
