@@ -128,7 +128,7 @@ body{
   transform: skew(0deg, 6deg);
 }
 .container-flat{
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 
 .sec2 p {
@@ -186,7 +186,7 @@ body{
     }
     nav {
         justify-content: center;
-        padding: 0 1.5em 0 0;
+        padding: 0 1em 0 0;
     }
     .content {
         padding: 0px;
