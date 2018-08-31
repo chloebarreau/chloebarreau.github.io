@@ -128,7 +128,7 @@ body{
   transform: skew(0deg, 6deg);
 }
 .container-flat{
-  padding: 10px 10px;
+  padding: 10px 0px;
 }
 
 .sec2 p {
