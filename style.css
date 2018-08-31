@@ -17,6 +17,7 @@ p {
 .smalltext {
     padding: 0 20 0 20;
     font-size: 16px;
+    text-align: center;
 }
 
 .intersection{
@@ -41,18 +42,19 @@ p.cardText {
   left: 50%;
 }
 
-.imgwrap img {
+img {
    display: block;
    width: 100%;
    max-width: 500px; /*actual image width*/
    height: auto; /* maintain aspect ratio*/
    margin: auto; /*optional centering of image*/
+   border-radius: 3px;
 }
 
 .overlay {
      opacity:0; /* Completely invisible. */ 
      transition: 0.2s; 
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: white;
     position: absolute;
   top: 0;
@@ -70,7 +72,6 @@ p.cardText {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: 1.5em;
 }
 
 ul {
@@ -127,17 +128,13 @@ body{
   transform: skew(0deg, 6deg);
 }
 .container-flat{
-  padding: 15px 20px;
+  padding: 10px 15px;
 }
 
 .sec2 p {
   padding: 0 200px 150px;
   color: white;
   text-align: right;
-}
-
-.row {
-    margin: 8px 0px;
 }
 
 /* Add padding BETWEEN each column */
