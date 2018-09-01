@@ -124,7 +124,7 @@ body{
 }
 
 .container{
-  padding: 15px 20px;
+  padding: 30px 10px;
   transform: skew(0deg, 6deg);
 }
 .container-flat{
@@ -181,7 +181,7 @@ body{
       transform: skew(0deg, 0deg) translateY(0px);
     }
     .container{
-	padding: 10 0 40 0;
+	padding: 10px 0px 40px 0px;
       transform: skew(0deg, 0deg);
     }
     nav {
