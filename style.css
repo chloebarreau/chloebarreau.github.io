@@ -3,9 +3,7 @@
 }
 
 p {
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'IBM Plex Serif', serif;
-  /* font-style: italic; */
   color: black;
   font-size: 40px;
   display: flex;
@@ -18,17 +16,6 @@ p {
     padding: 0 20 0 20;
     font-size: 16px;
     text-align: center;
-}
-
-.intersection{
-    font-family: 'IBM Plex Serif', sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    /* background-color:#A0EBEC; */
-    text-align: center;
-    margin: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 p.cardText {
@@ -164,6 +151,46 @@ body{
     padding: 10px;
     border-radius: 5px;
     position: relative;
+}
+
+.pop {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.pop-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pop p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+}
+
+.pop a:hover, .pop a:focus {
+    color: black;
+}
+
+.pop .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    transition: 0.3s;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
