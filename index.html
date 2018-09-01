@@ -36,12 +36,18 @@
   <div class="row">
       <div class="column">
           <div class="content">
-              <img src="images/speed.png" alt="speed" style="width:100%">
+              <img src="images/speed.png" alt="speed" style="cursor:pointer" onclick="openCard()">
               <div class="overlay">
                   <p class = cardText>EAST VS WEST</p>
               </div>
           </div>
       </div>
+    <div id="myCard" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCard()">&times;</a>
+      <div class="overlay-content">
+        <p> About speed test! </p>
+      </div>
+    </div>
       <div class="column">
           <div class="content">
               <img src="images/enroute.png" alt="enroute" style="width:100%">
