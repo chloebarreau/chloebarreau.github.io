@@ -118,12 +118,6 @@ body{
   padding: 10px;
 }
 
-.sec2 p {
-  padding: 0 200px 150px;
-  color: white;
-  text-align: right;
-}
-
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
@@ -180,10 +174,6 @@ body{
     display: block;
 }
 
-.pop a:hover, .pop a:focus {
-    color: black;
-}
-
 .pop .closebtn {
     position: absolute;
     text-decoration: none;
@@ -218,7 +208,7 @@ body{
     .content {
         padding: 0px;
     }
-    .pop a {font-size: 20px}
+    .pop p {font-size: 20px}
     .pop .closebtn {
 	font-size: 40px;
 	top: 15px;
