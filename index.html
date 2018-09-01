@@ -34,20 +34,20 @@
 <section class = "main">
     <!-- Portfolio Gallery Grid -->
   <div class="row">
-      <div class="column">
+      <div class="column" style="cursor:pointer" onclick="openCard()">
           <div class="content">
-              <img src="images/speed.png" alt="speed" style="cursor:pointer" onclick="openCard()">
+              <img src="images/speed.png" alt="speed">
               <div class="overlay">
                   <p class = cardText>EAST VS WEST</p>
               </div>
           </div>
       </div>
-    <div id="myCard" class="pop">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeCard()">&times;</a>
-      <div class="pop-content">
-        <p> About speed test! </p>
+      <div id="myCard" class="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCard()">&times;</a>
+        <div class="pop-content">
+          <p> About speed test! </p>
+        </div>
       </div>
-    </div>
       <div class="column">
           <div class="content">
               <img src="images/enroute.png" alt="enroute" style="width:100%">
