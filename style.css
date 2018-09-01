@@ -218,6 +218,12 @@ body{
     .content {
         padding: 0px;
     }
+    .pop a {font-size: 20px}
+    .pop .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+    }
 }
 
 /* red: f98ca4;
