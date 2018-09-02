@@ -34,7 +34,7 @@
 <section class = "main">
     <!-- Portfolio Gallery Grid -->
   <div class="row">
-      <div class="column" style="cursor:pointer" onclick="openCard()">
+      <div class="column" style="cursor:pointer" onclick="openCard('speed')">
           <div class="content">
               <img src="images/speed.png" alt="speed">
               <div class="overlay">
@@ -42,19 +42,35 @@
               </div>
           </div>
       </div>
-      <div id="myCard" class="pop">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCard()">&times;</a>
+      <div id="speed" class="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('speed')">&times;</a>
         <div class="pop-content">
-          <p> About speed test! </p>
+            <h1>SPEED TESTS WITH PYTHON</h1>
+          <p>Learned the foundations of sending data over the Internet with HTTPs and APIs. Used Python because it was a new langauge, could be picked up quickly, and would be opimal for playing with data.</p>
+          <h1>PURPOSE</h1>
+          <p>Websites in China are often not optimized for the West and vice versa. The speed tests demonstrate the discrepancy. The startup I was working for, Notey, is creating a product that automatically converts Western resources to the Chinese equivalent (e.g. Google Maps to Baidu Maps, YouTube to YouKu etc)</p>
+          <h1>CHALLENGES</h1>
+          <p>Learned to dig into not just the program I was creating, but also the other resources I was leveraging. For a while I couldn't understand why I was reading incomplete JSON data and spent ages looking at more complicated solutions, such as polling, without extensively testing to understand the original problem. When I finally reverted, I realised I just needed to give the API more time (longer delay). This project taught me a couple of things 1) Yes, I was only two days into Python, but I should trust my instincts rather than rush to overcomplicate things. 2) Python is very easy to read, but lower level languages are more explicit and I was midly nostalgic when wanting to pass by reference.</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column" style="cursor:pointer" onclick="openCard('enroute')">
           <div class="content">
               <img src="images/enroute.png" alt="enroute" style="width:100%">
               <div class="overlay">
                   <p class = cardText>ENROUTE</p>
               </div>
           </div>
+      </div>
+      <div id="enroute" class="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('enroute')">&times;</a>
+        <div class="pop-content">
+        <h1>WiCS INNOVATION FELLOWSHIP PROJECT</h1>
+          <p>Collaberated with three Stanford students to create a social service website dedicated to the building of diverse project teams. Utilised HTML, CSS, Javascript and was kindly mentored by Capital One.</p>
+          <h1>PURPOSE</h1>
+          <p>This project stemmed from a desire to encourage students to work with others on their ambitious ideas. Enroute embraces networking with others of similar interests and different strengths.</p>
+          <h1>TAKEAWAYS</h1>
+          <p>Working in a team introduced me to the basics of github and the value of programming in a way that is clean and accessible to others. I also enjoyed tapping into new online resources for front-end development!</p>
+        </div>
       </div>
     <div class="column">
           <div class="content">
@@ -101,4 +117,3 @@
 </section>
 </body>
 </html>
-
