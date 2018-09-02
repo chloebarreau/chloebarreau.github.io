@@ -20,7 +20,7 @@
   <!-- Art Gallery Grid -->
   <section class = "main">
       <div class="row">
-          <div class="column" style="cursor:pointer" onclick="openCard()">
+          <div class="column" style="cursor:pointer" onclick="openCard('cases')">
               <div class="content">
                   <img src="images/clay.png" alt="cases" style="width:100%">
                   <div class="overlay">
@@ -28,27 +28,43 @@
                   </div>
               </div>
           </div>
-          <div id="myCard" class="pop">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeCard()">&times;</a>
+          <div id="cases" class="pop">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCard('cases')">&times;</a>
             <div class="pop-content">
                 <h1> CONCEPT </h1>
               <p>
-                  Growing up in hong kong, one of the densest cities, I have always been fascinated by the most basic of containers, our skin, and how its compression can simultaneously represent confinement, intimacy and adaptability. <br> One night I ate pistachios and the bowl of empty shells and imagined making flesh-like folds of skin in the shells.
+                  Growing up in hong kong, one of the densest cities, I have always been fascinated by the most basic of containers, our skin, and how its compression can simultaneously represent confinement, intimacy and adaptability. <br> One night I ate a bowl of pistachios and I imagined making flesh-like folds in the shells.
               </p>
               <h1>INVESTIGATION OF GROWTHS IN CONFINED SPACES</h1>
               <img src="images/cases.png" alt="Investigation" >
               <h1> PRODUCT </h1>
-              <img src="images/cases2.png" alt="Investigation" >
-              <p>This series is abstract representation of flesh in the womb and reflects the movement of the masses, how we are contained, and how our containment increases our tendency to order our environment. </p>
+              <img src="images/cases1.png" alt="Investigation" >
+              <p>This abstract representation of flesh in the womb reflects the movement of the masses, how we are contained, and how our containment increases our tendency to order our environment. </p>
             </div>
           </div>
-          <div class="column">
+          <div class="column" style="cursor:pointer" onclick="openCard('marks')">
               <div class="content">
                   <img src="images/readingmarks.png" alt="readingmarks" style="width:100%">
                   <div class="overlay">
                       <p class = cardText>READING MARKS</p>
                   </div>
               </div>
+          </div>
+          <div id="marks" class="pop">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCard('marks')">&times;</a>
+            <div class="pop-content">
+                <h1> READING MARKS </h1>
+              <p>
+                  When reading, I like drawing along the way. It encourages me to notice symbolism and imagery.
+                  I also build stronger connections when making my own visualisations for prominent ideas.
+              </p>
+              <h1> HOMEGOING BY YAA GYASI</h1>
+              <img src="images/yaa2.png" alt="Yaa Gyasi" style="max-width: 50%">
+              <img src="images/yaa.png" alt="Yaa Gyasi" style="max-width: 50%">
+              <h1> THE SOCIAL ANIMAL BY DAVID BROOKS </h1>
+              <img src="images/brooks.png" alt="David Brooks" style="max-width: 50%">
+              <img src="images/brooks2.jpg" alt="David Brooks" style="max-width: 50%">
+            </div>
           </div>
           <div class="column">
               <div class="content">
