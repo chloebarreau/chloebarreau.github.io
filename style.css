@@ -30,7 +30,6 @@ p.cardText {
 }
 
 img {
-   display: block;
    width: 100%;
    max-width: 500px; /*actual image width*/
    height: auto; /* maintain aspect ratio*/
@@ -39,8 +38,8 @@ img {
 }
 
 .overlay {
-     opacity:0; /* Completely invisible. */ 
-     transition: 0.2s; 
+     opacity:0; /* Completely invisible. */
+     transition: 0.2s;
     border-radius: 3px;
     background-color: white;
     position: absolute;
@@ -150,6 +149,7 @@ body{
 .pop {
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
     display: none;
     position: fixed;
     z-index: 1;
@@ -160,18 +160,11 @@ body{
 
 .pop-content {
     position: relative;
-    top: 25%;
+    top: 10%;
+    padding: 0 10% 5% 10%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
-
-.pop p {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
 }
 
 .pop .closebtn {
@@ -181,6 +174,24 @@ body{
     right: 45px;
     font-size: 60px;
     transition: 0.3s;
+}
+
+.pop p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+}
+
+.pop h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
+}
+
+.pop img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -208,7 +219,7 @@ body{
     .content {
         padding: 0px;
     }
-    .pop p {font-size: 20px}
+    /* .pop p {font-size: 12px} */
     .pop .closebtn {
 	font-size: 40px;
 	top: 15px;
