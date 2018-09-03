@@ -46,11 +46,11 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeCard('speed')">&times;</a>
         <div class="pop-content">
             <h1>SPEED TESTS WITH PYTHON</h1>
-          <p>Learned the foundations of sending data over the Internet with HTTPs and APIs. Used Python because it was a new language for me, could be picked up quickly, and would be opimal for playing with data.</p>
+          <p>Created a program that collected and formatted data (page load time, page size, TTFB, number of requests/resources) into an exportable CSV file. Learned the foundations of sending data over the Internet with HTTPs and APIs. Used Python because it was a new language for me, could be picked up quickly, and was opimal for data science.</p>
           <h1>PURPOSE</h1>
-          <p>Websites in China are often not optimized for the West and vice versa. The speed tests demonstrate the discrepancy. The startup I was working for, Notey, is creating a product that automatically converts Western resources to the Chinese equivalent (e.g. Google Maps to Baidu Maps, YouTube to YouKu etc)</p>
+          <p>Websites in the West are often not optimized for China and vice versa. The speed tests demonstrate the discrepancy, which was beneficial for the startup I was interning with, Notey. Notey is creating a product that automatically converts Western resources to the Chinese equivalent (e.g. Google Maps to Baidu Maps, YouTube to YouKu etc).</p>
           <h1>CHALLENGES</h1>
-          <p>Learned to dig into not just the program I was creating, but also the other resources I was leveraging. For a while I couldn't understand why I was reading incomplete JSON data and spent ages looking at more complicated solutions, such as polling, without extensively testing to understand the original problem. When I finally reverted, I realised I just needed to give the API more time (longer delay). This project taught me a couple of things 1) Yes, I was only two days into Python, but I should trust my instincts rather than rush to overcomplicate things. 2) Python is very easy to read, but lower level languages are more explicit and I was midly nostalgic when wanting to pass by reference.</p>
+          <p>For a while I couldn't understand why I was reading incomplete JSON data and spent ages looking at more complicated solutions, such as polling, without extensively testing to understand the original problem. When I finally reverted, I realised I just needed to give the API more time (longer delay). This project taught me a couple of things 1) Yes, I was only two days into Python, but I should trust my instincts before overcomplicating things. 2) Extensively test so that there are no assumptions 3) Python is very easy to read, but lower level languages are more explicit and I was midly nostalgic when wanting to pass by reference.</p>
         </div>
       </div>
       <div class="column" style="cursor:pointer" onclick="openCard('enroute')">
@@ -67,12 +67,12 @@
         <h1>WiCS INNOVATION FELLOWSHIP PROJECT</h1>
           <p>Collaberated with three Stanford students to create a social service website dedicated to the building of diverse project teams. Utilised HTML, CSS, Javascript and was kindly mentored by Capital One.</p>
           <h1>PURPOSE</h1>
-          <p>This project stemmed from a desire to encourage students to work with others on their ambitious ideas. Enroute embraces networking with others of similar interests and different strengths.</p>
+          <p>This project stemmed from a desire to encourage students to realize their ideas. Enroute embraces networking with others of similar interests and different strengths.</p>
           <h1>TAKEAWAYS</h1>
           <p>Working in a team introduced me to the basics of github and the value of programming in a way that is clean and accessible to others. I also enjoyed tapping into new online resources for front-end development!</p>
         </div>
       </div>
-    <div class="column">
+    <div class="column" style="cursor:pointer" onclick="openCard('reboot')">
           <div class="content">
               <img src="images/reboot.png" alt="reboot" style="width:100%">
               <div class="overlay">
@@ -80,37 +80,116 @@
               </div>
           </div>
       </div>
-      <div class="column">
+      <div id="reboot" class="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('reboot')">&times;</a>
+        <div class="pop-content">
+        <h1>REBOOT</h1>
+          <p>
+              Co-led a charitable organisation that donates refurbished laptops and teaches computer literacy to under privileged single mothers in Sham Shui Po, Hong Kong. Coordinated regular volunteer sessions, laptop collections, fund raising, educational materials, e-waste recycling. Awarded funding and mentorship through an external incubator, Jockey Club MaD Accumulator Scheme Grant.
+          </p>
+          <h1>PURPOSE</h1>
+          <p>
+              During a time of technological innovation, it is important to uplift communities that are currently behind. The motivation behind this project was to help bridge the technological gap, so that progress is collective.
+          </p>
+          <h1>TAKEAWAYS</h1>
+          <p>
+              Explaining concepts such as the internet, social media and email in the simplest of terms challenged me to re-conceptualise my interactions with, and undersanding of, technology. Breaking down the intuition behind every graphical user interface revealed to me the importance of design in increasing accessibility.
+          </p>
+        </div>
+      </div>
+      <div class="column" style="cursor:pointer" onclick="openCard('sentient')">
           <div class="content">
-              <img src="images/sentient.png" alt="sentient" style="width:100%">
+              <img src="images/sentient.png" alt="sentient">
               <div class="overlay">
                   <p class = cardText>SENTIENT TECHNOLOGIES</p>
               </div>
           </div>
       </div>
-    <div class="column">
+      <div id="sentient" class="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('sentient')">&times;</a>
+        <div class="pop-content">
+        <h1>INTERNSHIP WITH SENTIENT TECHNOLOGIES</h1>
+          <p>
+              Under the marketing department, I analysed the artificial intelligence company's e-commerce personalization and web design optimization products.
+          </p>
+          <h1>PURPOSE</h1>
+          <p>
+              Sentient's AI applications are advanced compared to traditional A/B testing and text-based product recommendation systems. As a result, it was especially important to identify competitors and target customers.
+          </p>
+          <h1>TAKEAWAYS</h1>
+          <p>
+              Conducting market research and competitor analysis for the first time exposed me to many new resources (Gartner, crunchbase, research databases etc). I gained a better understanding of their evolutionary AI algorithms, as well as how larger startups are run. "Seek, and ye shall find" rang so so true. Meetings with researchers, engineers, PMs, and execs led to conversations ranging from the future of retail to patents, career paths and ethics.
+          </p>
+          <img src="images/eclipse.png" alt="eclipse" style="width:40%">
+          <p>this was also quite exciting</p>
+        </div>
+      </div>
+    <div class="column" style="cursor:pointer" onclick="openCard('gakko')">
       <div class="content">
-        <img src="images/GAKKO.png" alt="Gakko" style="width:100%">
+        <img src="images/GAKKO.png" alt="Gakko">
         <div class="overlay">
             <p class = cardText>GAKKO</p>
         </div>
       </div>
     </div>
+    <div id="gakko" class="pop">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCard('gakko')">&times;</a>
+      <div class="pop-content">
+      <h1>GAKKO EXPERIENTIAL LEARNING</h1>
+        <p>
+            Gakko organises summer experiences around the world for high school students. As a Gakko Sempai, I worked with seven other teachers to create a cohesive camp experience for 42 students. Spent two weeks in New York brainstorming, testing, and planning, before arriving in the Berkshires.
+        </p>
+        <h1>TAKEAWAYS</h1>
+        <p>
+            I learned to embrace surprise, not just the surprise I created for others. Many of the students were my age and the teachers I worked with were 5-10 years older than me. Although I had expected at least a couple teachers to still be in university, I was excited to be in a diverse crowd. However, once camp commenced I had to face the complexity of being an authority-figure-but-also-relatable-teen. It was an unexpected gift that forced me to re-evaluate my sources of confidence and helped me cultivate parts of myself that I have brought beyond camp.</p> <p>It was also exciting to see how meanginful expereinces could be created in less than a day and with the simplest of resources if approached with the right energy (like priming canvas!).
+        </p>
+        <h1>LIVING SCHEDULE</h1>
+        <img src="images/gakko5.jpg" alt="schedule">
+        <p>why make boring schedules?</p>
+        <h1>BATHROOM CONFESSIONS</h1>
+        <img src="images/bathroom.jpeg" alt="confessions" style="width:50%">
+        <p>hygenic expression (?)<p>
+        <h1>MOMENTS</h1>
+        <p>On the last day, students wrote down their favorite camp moments. This space was created to reflect on, and say goodbye to, the people and place we had come to know.</p>
+        <img src="images/gakko2.png" alt="moments" style="width:50%">
+      </div>
+    </div>
     <div class="column">
         <div class="content">
-            <img src="images/notey.png" alt="notey" style="width:100%">
+            <img src="images/notey.png" alt="notey">
             <div class="overlay">
                 <p class = cardText>NOTEY</p>
             </div>
         </div>
     </div>
-    <div class="column">
+    <div class="column" style="cursor:pointer" onclick="openCard('asym')">
         <div class="content">
-            <img src="images/asymptote2.png" alt="symptote" style="width:100%">
+            <img src="images/asymptote2.png" alt="asymptote">
             <div class="overlay">
                 <p class = cardText>ASYMPTOTE JOURNAL</p>
             </div>
         </div>
+    </div>
+    <div id="asym" class="pop">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCard('asym')">&times;</a>
+      <div class="pop-content">
+      <h1>GRAPHIC DESIGNER @ASYMPTOTE JOURNAL</h1>
+        <p>
+            Asymptote is an online literary magazine dedicated to translations of world literature. I work as a graphic designer alongside the Editor-in-Chief.
+        </p>
+        <p>
+            As a half-Chinese, half-French who has followed Asymptote since working on my own translation projects in high school, designing for the journal has been a dream come true.
+        </p>
+        <h1>TAKEAWAY</h1>
+        <p>
+            Beyond witnessing the full potential of Trello with this massive journal, i've practiced catering to new audiences, collaberating with fellow designers and making use of creative constraints.
+        </p>
+        <h1>30 Days 30 Issues Campaign</h1>
+        <p>
+            The #30days30issues campagin required designing a template that would be flexible enough to use for 30 different cover images. The aim was to be cohesive, whilst having enough variance to maintain interest. I achieved this by deconstructing and playing with circles.
+        </p>
+        <img src="images/asymp.jpg" alt="asymptote">
+      </div>
     </div>
   </div>
       <!-- END GRID -->
