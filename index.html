@@ -1,6 +1,9 @@
 <html>
 <head>
   <title>Chloe Barreau</title>
+  <meta name="description" content="Chloe Barreau Portfolio">
+  <meta name="keywords" content="chloe barreau, UX, design, portfolio, software, code, chloe, barreau">
+  <meta name="author" content="Chloe Barreau">
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
@@ -8,35 +11,24 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,500i|Work+Sans" rel="stylesheet">
 </head>
 <body>
-<section class = "skewedBox">
     <div class = "container">
-      <nav>
-          <ul>
-            <li><a class = "underscore" href="index.html">work +</a></li>
-            <li><a class = "underscore" href="art.html">art +</a></li>
-            <li><a class = "underscore" href="about.html">about +</a></li>
-          </ul>
-      </nav>
-      <div class= "welcome">
-          <div class="box">
-              <div class="imgwrap">
-                  <!-- <img src= "yellow2logo.png"></img> -->
-              </div>
-          </div>
-        <p class = "title">CHLOE BARREAU</p>
-                <p class= "smalltext">
-            A Computer Science & Art Practice Major
-            who likes giving shape to physical and digital spaces.
-        </p>
-      </div>
-  </div>
-</section>
+        <div class="left">
+            <p class= "title"> CHLOE BARREAU</p>
+        </div>
+        <nav>
+                <ul>
+                    <li><a class = "underscore" href="index.html">work +</a></li>
+                    <li><a class = "underscore" href="art.html">art +</a></li>
+                    <li><a class = "underscore" href="about.html">about +</a></li>
+                </ul>
+        </nav>
+    </div>
 <section class = "main">
     <!-- Portfolio Gallery Grid -->
   <div class="row">
       <div class="column" style="cursor:pointer" onclick="openCard('speed')">
           <div class="content">
-              <img src="images/speed.png" alt="speed">
+              <img src="images/speed.png" alt="speed" style="width:100%">
               <div class="overlay">
                   <p class = cardText>EAST VS WEST</p>
               </div>
@@ -57,21 +49,22 @@
       </div>
       <div class="column" style="cursor:pointer" onclick="openCard('enroute')">
           <div class="content">
-              <img src="images/enroute.png" alt="enroute" style="width:100%">
+              <img src="images/flutter.png" alt="enroute" style="width:100%">
               <div class="overlay">
-                  <p class = cardText>ENROUTE</p>
+                  <p class = cardText>FLUTTER</p>
               </div>
           </div>
       </div>
       <div id="enroute" class="pop">
         <a href="javascript:void(0)" class="closebtn" onclick="closeCard('enroute')">&times;</a>
         <div class="pop-content">
-        <h1>WiCS INNOVATION FELLOWSHIP PROJECT</h1>
-          <p>Collaberated with three Stanford students to create a social service website dedicated to the building of diverse project teams. Utilised HTML, CSS, Javascript and was kindly mentored by Capital One.</p>
+        <h1>FLUTTER MOBILE APP</h1>
+          <p>Collaborated with three Stanford students to create Flutter, a mobile app dedicated to decluttering meaningfully. Utilised React Native, Expo, Firebase, and Figma. This project was built in CS147 and CS247.</p>
           <h1>PURPOSE</h1>
-          <p>This project stemmed from a desire to encourage students to realize their ideas. Enroute embraces networking with others of similar interests and different strengths.</p>
+          <p>We are often reluctant to declutter because objects hold sentimental value. Flutter makes the process of giving items easy, social, and emotionally rewarding. Through closed, tight-knit communities, we systematically encourage receivers of treasured objects to share their side of the story.</p>
+          <img src="images/flutterposter.png" alt="eclipse" style="width:60%; margin-top: 20px;">
           <h1>TAKEAWAYS</h1>
-          <p>Working in a team introduced me to the basics of github and the value of programming in a way that is clean and accessible to others. I also enjoyed tapping into new online resources for front-end development!</p>
+          <p>Working in a team introduced me to the basics of github and the value of programming in a way that is clean and accessible to others. I enjoyed seeing a mobile app come to life from sketches to a published app. I particularly valued making design decisions and seeing how they would evolve when implemented and tested.</p>
         </div>
       </div>
     <div class="column" style="cursor:pointer" onclick="openCard('reboot')">
@@ -101,7 +94,7 @@
       </div>
       <div class="column" style="cursor:pointer" onclick="openCard('sentient')">
           <div class="content">
-              <img src="images/sentient.png" alt="sentient">
+              <img src="images/sentient2.png" alt="sentient">
               <div class="overlay">
                   <p class = cardText>SENTIENT TECHNOLOGIES</p>
               </div>
@@ -188,5 +181,7 @@
   </div>
       <!-- END GRID -->
 </section>
+<div class="footer">
+</div>
 </body>
 </html>
