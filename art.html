@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,500i|Work+Sans" rel="stylesheet">
 </head>
 <body>
-    <div class = "container-flat">
+    <div class = "container">
+        <div class="left">
+            <p class= "title"> CHLOE BARREAU</p>
+        </div>
       <nav>
           <ul>
             <li><a class = "underscore" href="index.html">work +</a></li>
@@ -82,16 +85,38 @@
                     What happens when we block off sight? What is revealed?
                   </p>
                   <p>
-                    I interviewed researchers, expert echolocators, Professors and engineers to learn more about sound and its importance. 
-                    I recieved a university grant to pursue this investigation right before the summer of 2018 and am currently in audio editing and story crafting stage. The final product will be a 20 minute podcast shared via the Stanford Storytelling Project!  
+                    I interviewed researchers, expert echolocators, Professors and engineers to learn more about sound and its importance.
+                    I recieved a university grant to pursue this investigation right before the summer of 2018 and am currently in audio editing and story crafting stage. The final product will be a 20 minute podcast shared via the Stanford Storytelling Project!
                   </p>
                 <p>Learning some Hindenburg in the process:</p>
                 <img src="images/hindy.png" alt="Hindenburg" style="max-width: 100%">
             </div>
           </div>
+          <div class="column" style="cursor:pointer" onclick="openCard('skins')">
+              <div class="content">
+                  <img src="images/skins.png" alt="cases" style="width:100%">
+                  <div class="overlay">
+                      <p class = cardText>SKINS</p>
+                  </div>
+              </div>
+          </div>
+          <div id="skins" class="pop">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCard('skins')">&times;</a>
+            <div class="pop-content">
+                <h1>SKINS</h1>
+                  <p>
+                    Contained spaces can produce feelings of warmth (figuratively and literally) via close proximity. "Skins" communicates the movement, diversity and delicacy of the flesh. I experimented with glue and paint, pouring mixtures in different patterns, allowing individual strips to dry on plastic sheets before weaving them into the three dimensional form.
+                  <p>
+                    Exhibited in Hong Kong and Stanford Art Gallery.
+                  </p>
+                <img src="images/skins_art.jpeg" alt="Hindenburg" style="max-width: 50%">
+            </div>
+          </div>
       </div>
   </section>
             <!-- END GRID -->
-  </div>
+
+            <div class="footer">
+            </div>
 </body>
 </html>
