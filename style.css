@@ -11,6 +11,13 @@
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+<<<<<<< HEAD
+=======
+body.noScroll {
+  overflow: hidden;
+}
+
+>>>>>>> 7a32702096d88835cb332039b3bcea668ff36103
 p {
   font-weight: bold;
   color: black;
