@@ -3,200 +3,78 @@
 <head>
   <title>Chloe Barreau</title>
   <meta name="description" content="Chloe Barreau Portfolio">
-  <meta name="keywords" content="chloe barreau, UX, design, portfolio, software, code, chloe, barreau">
+  <meta name="keywords" content="chloe barreau, UX, design, portfolio, software, code, chloe, barreau, product management, neeva">
   <meta name="author" content="Chloe Barreau">
   <link rel="icon" href="images/logo_new.png">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,500i|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <div class = "container">
-        <div class="left">
-            <p class= "title"> CHLOE BARREAU</p>
-        </div>
-        <nav>
-                <ul>
-                    <li><a class = "underscore" href="index.html">work +</a></li>
-                    <li><a class = "underscore" href="art.html">art +</a></li>
-                    <li><a class = "underscore" href="about.html">about +</a></li>
-                </ul>
-        </nav>
-    </div>
-    <div class="hello" style="text-align:center">
-        <div>
-        <img class="hello-img" src="images/profile.png" alt="profile">
-        </div>
-        <h2>Hello, it's <i>Chloe!</i><br>
-          <br>
-          Senior at Stanford embracing both <br> the <span class="underline--magical">artistic</span> and the <span class="underline--magical">technical</span>.
-        </h2>
-        <div>
-            <a href="#middle">
-                <div class="arrow"></div>
-            </a>
-        </div>
-    </div>
-<section class = "main">
-    <!-- Portfolio Gallery Grid -->
-  <div class="row" id='middle'>
-      <div class="column" style="cursor:pointer" onclick="openCard('speed')">
-          <div class="content">
-              <img src="images/speed.png" alt="speed" style="width:100%">
-              <div class="overlay">
-                  <p class = cardText>EAST <br> VS <br> WEST</p>
-              </div>
-          </div>
+<body class="bg-blur">
+    <section class="about-blurb">
+      <div class="">
+        <img class="itsme" src="images/chloe.jpg">
+        <p class= "title"> CHLOE BARREAU</p>
       </div>
-      <div id="speed" class="pop">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('speed')">&times;</a>
-        <div class="pop-content">
-            <h1>SPEED TESTS WITH PYTHON</h1>
-          <p>Created a program that collected performance data (page load time, page size, TTFB, number of requests/resources) from 15 locations around the world into an exportable CSV file.</p>
-          <h1>PURPOSE</h1>
-          <p>Websites in the West are often not optimized for China and vice versa. The speed tests demonstrate the discrepancy, which was beneficial for the startup I was interning with, Notey. Notey is creating a product that automatically converts Western resources to the Chinese equivalent (e.g. Google Maps to Baidu Maps, YouTube to YouKu etc).</p>
-          <h1>CHALLENGES</h1>
-          <p>For a while I couldn't understand why I was reading incomplete JSON data and looked into more complicated solutions, such as polling. When I reverted, I realised I just needed to give the API more time (longer delay). This project taught me a couple of things 1) Yes, I was only two days into Python, but I should trust my instincts before overcomplicating things. 2) Extensively test so that there are no assumptions 3) Python is very easy to read, but lower level languages are more explicit and I was midly nostalgic when wanting to pass by reference.</p>
-          <h1>TAKEAWAYS</h1>
-          <p>Learned how to send data over the Internet with HTTPs and APIs, picked up Python (new language for me, could be picked up quickly, and was optimal for data science), delved into multithreading, and gained more practical experience with DevTools.</p>
-        </div>
+      <div class="about-1"> 
+          I'm a Product Manager at <a class="underscore" href="https://neeva.com/" target="_blank">Neeva</a> and graduate of Stanford University Class of 2021. I hibernate in California 🌴, with a love for tech, art, change and challenge.    
       </div>
-      <div class="column" style="cursor:pointer" onclick="openCard('enroute')">
-          <div class="content">
-              <img src="images/flutter.png" alt="enroute" style="width:100%">
-              <div class="overlay">
-                  <p class = cardText>FLUTTER</p>
-              </div>
-          </div>
-      </div>
-      <div id="enroute" class="pop">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('enroute')">&times;</a>
-        <div class="pop-content">
-        <h1>FLUTTER MOBILE APP</h1>
-          <p>Collaborated with three Stanford students to create Flutter, a mobile app dedicated to decluttering meaningfully. Utilised React Native, Expo, Firebase, and Figma. This project was built in CS147 and CS194H.</p>
-          <h1>PURPOSE</h1>
-          <p>We are often reluctant to declutter because objects hold sentimental value. Flutter makes the process of giving items easy, social, and emotionally rewarding. Through closed, tight-knit communities, we systematically encourage receivers of treasured objects to share their side of the story.</p>
-          <img src="images/flutterposter.png" alt="eclipse" style="width:60%; margin-top: 20px;">
-          <h1>TAKEAWAYS</h1>
-          <p>Working in a team introduced me to the basics of github and the value of programming in a way that is clean and accessible to others. I enjoyed seeing a mobile app come to life from sketches to a published app. I particularly valued making design decisions and seeing how they would evolve when implemented and tested.</p>
-        </div>
-      </div>
-    <div class="column" style="cursor:pointer" onclick="openCard('reboot')">
-          <div class="content">
-              <img src="images/reboot.png" alt="reboot" style="width:100%">
-              <div class="overlay">
-                  <p class = cardText>REBOOT</p>
-              </div>
-          </div>
-      </div>
-      <div id="reboot" class="pop">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('reboot')">&times;</a>
-        <div class="pop-content">
-        <h1>REBOOT</h1>
-          <p>
-              Co-led a charitable organisation that donates refurbished laptops and teaches computer literacy to under privileged single mothers in Sham Shui Po, Hong Kong. Coordinated regular volunteer sessions, laptop collections, fund raising, educational materials, e-waste recycling. Awarded funding and mentorship through an external incubator, Jockey Club MaD Accumulator Scheme Grant.
-          </p>
-          <h1>PURPOSE</h1>
-          <p>
-              During a time of technological innovation, it is important to uplift communities that are currently behind. The motivation behind this project was to help bridge the technological gap, so that progress is collective.
-          </p>
-          <h1>TAKEAWAYS</h1>
-          <p>
-              Explaining concepts such as the internet, social media and email in the simplest of terms challenged me to re-conceptualise my interactions with, and undersanding of, technology. Breaking down the intuition behind every graphical user interface revealed to me the importance of design in increasing accessibility.
-          </p>
-        </div>
-      </div>
-      <div class="column" style="cursor:pointer" onclick="openCard('sentient')">
-          <div class="content">
-              <img src="images/sentient2.png" alt="sentient">
-              <div class="overlay">
-                  <p class = cardText>SENTIENT TECHNOLOGIES</p>
-              </div>
-          </div>
-      </div>
-      <div id="sentient" class="pop">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCard('sentient')">&times;</a>
-        <div class="pop-content">
-        <h1>INTERNSHIP WITH SENTIENT TECHNOLOGIES</h1>
-          <p>
-              Under the marketing department, I analysed the artificial intelligence company's e-commerce personalization and web design optimization products.
-          </p>
-          <h1>PURPOSE</h1>
-          <p>
-              Sentient's AI applications are advanced compared to traditional A/B testing and text-based product recommendation systems. As a result, it was especially important to identify competitors and target customers.
-          </p>
-          <h1>TAKEAWAYS</h1>
-          <p>
-              Conducting market research and competitor analysis for the first time exposed me to many new resources (Gartner, crunchbase, research databases etc). I gained a better understanding of Sentient's evolutionary AI algorithms, as well as how larger startups are run. "Seek, and you shall find" rang so so true. Meetings with researchers, engineers, PMs, and execs led to conversations ranging from the future of retail to patents, career paths and ethics.
-          </p>
-          <img src="images/eclipse.png" alt="eclipse" style="width:40%">
-          <p>this was also quite exciting</p>
-        </div>
-      </div>
-    <div class="column" style="cursor:pointer" onclick="openCard('gakko')">
-      <div class="content">
-        <img src="images/GAKKO.png" alt="Gakko">
-        <div class="overlay">
-            <p class = cardText>GAKKO</p>
-        </div>
-      </div>
-    </div>
-    <div id="gakko" class="pop">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeCard('gakko')">&times;</a>
-      <div class="pop-content">
-      <h1>GAKKO EXPERIENTIAL LEARNING</h1>
-        <p>
-            Gakko organises summer experiences around the world for high school students. As a Gakko Sempai, I worked with seven other teachers to create a cohesive camp experience for 42 students. Spent two weeks in New York brainstorming, testing, and planning, before arriving in the Berkshires.
-        </p>
-        <h1>TAKEAWAYS</h1>
-        <p>
-            I learned to embrace surprise, not just the surprise I created for others. Many of the students were my age and the teachers I worked with were 5-10 years older than me. Although I had expected at least a couple teachers to still be in university, I was excited to be in a diverse crowd. Once camp commenced I had to face the complexity of being an authority-figure-but-also-relatable-teen. It was an unexpected gift that forced me to re-evaluate my sources of confidence and helped me cultivate parts of myself that I have brought beyond camp.</p> <p>It was also exciting to see how meanginful experiences could be created in less than a day and with the simplest of resources if approached with the right energy (like priming canvas!).
-        </p>
-        <h1>LIVING SCHEDULE</h1>
-        <img src="images/gakko4.jpg" alt="schedule">
-        <p>why make boring schedules?</p>
-        <h1>BATHROOM CONFESSIONS</h1>
-        <img src="images/bathroom.jpeg" alt="confessions" style="width:50%">
-        <p>hygenic expression (?)<p>
-        <h1>MOMENTS</h1>
-        <p>On the last day, students wrote down their favorite camp moments. This space was created to reflect on, and say goodbye to, the people and place we had come to know.</p>
-        <img src="images/gakko2.png" alt="moments" style="width:50%">
-      </div>
-    </div>
-    <div class="column" style="cursor:pointer" onclick="openCard('asym')">
-        <div class="content">
-            <img src="images/asymptote2.png" alt="asymptote">
-            <div class="overlay">
-                <p class = cardText>ASYMPTOTE JOURNAL</p>
+      <div class="about-row">
+          <div class="about-col about-left">
+            <div>
+              <h2>Experience</h2>
+              <a class="heading">Product Manager</a><br>
+              <a class="date underscore" href="https://neeva.com/"><b>Neeva.com</b>, July 2021-present</a><br>
+              <br>
+              <a class="heading">Designer</a> <br>
+              <a class="date"><b>Freelance</b>, 2020-2021</a><br>
+              <br>
+              <a class="heading">Software Engineering Intern</a><br>
+              <a class="date"><b>Adobe</b>, June 2019</a><br>
+              <br>
+              <a class="heading">Researcher</a><br>
+              <a class="date underscore" href="https://hci.stanford.edu/publications/2019/fracture/fracture-cscw2019.pdf" target="_blank"><b>Stanford HCI Group</b>, 2018-2019</a>
             </div>
-        </div>
-    </div>
-    <div id="asym" class="pop">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeCard('asym')">&times;</a>
-      <div class="pop-content">
-      <h1>GRAPHIC DESIGNER @ASYMPTOTE JOURNAL</h1>
-        <p>
-            Asymptote is an online literary magazine dedicated to translations of world literature. I work as a graphic designer alongside the Editor-in-Chief.
-        </p>
-        <p>
-            As a half-Chinese, half-French American who has followed Asymptote since working on translation projects in high school, designing for the journal has been a dream come true.
-        </p>
-        <h1>TAKEAWAY</h1>
-        <p>
-            Beyond witnessing the full potential of Trello (project management tool) with this massive journal, i've practiced catering to new audiences, collaborating with fellow designers and making use of creative constraints.
-        </p>
-        <h1>30 Days 30 Issues Campaign</h1>
-        <p>
-            The #30days30issues campagin required designing a template that would be flexible enough to use for 30 different cover images. The aim was to be cohesive, whilst having enough variance to maintain interest. I achieved this by deconstructing and playing with circles.
-        </p>
-        <img src="images/asymp.jpg" alt="asymptote">
+          </div>
+          <div class="about-col about-right">
+              <h2>Get in touch</h2>
+              <a class="heading light">[first name]@neeva.co</a>
+              <div>
+                  <a class="icon" href="https://github.com/chloebarreau" target="_blank">
+                    <img src="images/mygit.png" alt="github">
+                  </a>
+                  <a class="icon" href="https://www.linkedin.com/in/chloe-barreau/" target="_blank" >
+                    <img style="border-radius: unset" src="images/mylinkedin.png" alt="linkedin">
+                  </a>
+                </div> 
+          </div>
       </div>
-    </div>
-  </div>
-      <!-- END GRID -->
+      <div class="about-row about-loose">
+          <div class="about-col ops">
+            <h2>Education</h2>
+            <a class="heading">Stanford University</a>
+            <a class="date"><b>B.S. in Computer Science</b>, 2017-2021</a>
+          </div>
+          <div class="about-col2">
+                <h2>Languages</h2> 
+                <a class="heading light">English  -
+                Mandarin  -
+                French</a>
+          </div>
+          <div class="about-col3">
+                <h2>Side hustles</h2> 
+                <a class="stylehustle" href="https://smallbuilds.substack.com" target="_blank">https://smallbuilds.substack.com</a>
+                <a class="stylehustle" href="https://heymidpoint.com" target="_blank">https://heymidpoint.com</a> 
+          </div>
+      </div>
 </section>
-<div class="footer">
-</div>
 </body>
+<footer>  
+  <a class="typewrite" data-period="2000" data-type='[ "• Site designed & coded by Chloe •"]'>
+      <span class="wrap"></span>
+  </a> 
+</footer>
 </html>
